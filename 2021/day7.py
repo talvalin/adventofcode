@@ -1,5 +1,3 @@
-import itertools
-
 def load_input():
     with open('../aoc_inputs/2021/day07_input.txt') as input:
         return input.read().splitlines()
