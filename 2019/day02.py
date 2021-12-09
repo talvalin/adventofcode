@@ -20,7 +20,7 @@ def run_intcode(int_code):
     return int_code
 
 def run_gravity_assist(noun, verb):
-    with open('./day02_input.txt') as input:
+    with open('../aoc_inputs/2019/day02_input.txt') as input:
         int_code = []
         for line in input:
             int_code = list(map(int, line.split(','))) 

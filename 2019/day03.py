@@ -1,6 +1,6 @@
 def load_input():
     input = []
-    with open('./day03_input.txt') as file: 
+    with open('../aoc_inputs/2019/day03_input.txt') as file: 
         for line in file.read().splitlines(): 
             l = line.split(',') 
             input.append(l)

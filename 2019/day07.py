@@ -2,7 +2,7 @@ import itertools
 import intcode_computer as IntcodeComputer
 
 def load_intcode():
-    with open('./day07_input.txt') as input:
+    with open('../aoc_inputs/2019/day07_input.txt') as input:
         return [int(x) for x in input.read().strip('\n').split(',')]
 
 def get_phase_setting_permutations(start, end):

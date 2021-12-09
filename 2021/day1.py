@@ -1,5 +1,5 @@
 def load_input():
-    with open('./inputs/day01_input.txt') as input:
+    with open('../aoc_inputs/2021/day01_input.txt') as input:
         return [int(line) for line in input.readlines()]
 
 def part1(depths):
