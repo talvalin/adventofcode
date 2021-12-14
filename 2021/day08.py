@@ -10,6 +10,15 @@ def part1(input):
     return total
 
 def part2(input):
+    # guess we do it properly this time lol
+    segment_wire_mapping = {'a':0,
+                            'b':0,
+                            'c':0,
+                            'd':0,
+                            'e':0,
+                            'f':0,
+                            'gt':0
+                            }
     return 0
 
 def main():
