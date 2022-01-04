@@ -1,23 +1,25 @@
+import copy
+
 def load_input():
-    with open('../aoc_inputs/2021/day06_input.txt') as input:
+    with open('../aoc_inputs/2021/day06_test_input.txt') as input:
         return input.read().splitlines()
 
 def part1(input, days):
+    fish_school = copy.deepcopy(input)
     for day in range(0, days):
         new_fish = 0
-        for idx, fish in enumerate(input):
+        for idx, fish in enumerate(fish_school):
             if fish == 0:
-                input[idx] = 6
+                fish_school[idx] = 6
                 new_fish += 1
             else:
-                input[idx] = fish-1
-        input.extend([8 for i in range(new_fish)])      
-    return len(input)
+                fish_school[idx] = fish-1
+        fish_school.extend([8 for i in range(new_fish)])      
+    return len(fish_school)
 
 def part2(input, days):
     # create fish school
     fish_school = [0] * 9
-    print(len(fish_school))
     
     # initial update of school
     for x in input:
@@ -40,7 +42,7 @@ def part2(input, days):
 
 def main():
     input = [int(x) for x in load_input()[0].split(',')]
-    print(part1(input, 256))
+    print(part1(input, 80))
     print(part2(input, 256))
     
 if __name__ == "__main__":
