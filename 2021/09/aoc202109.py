@@ -47,6 +47,8 @@ def get_low_points(grid):
 
 def mark_basin(binary_grid, grid, height, width, y, x):
     """Recursive function to mark points belonging to a specific basin"""
+    """Python implementation of Christiana Man's JavaScript algorithm"""
+    """https://blog.cristiana.tech/advent-of-code-2021-day-9"""
     # end condition
     # if the point is a 9 in the heightmap, we've hit the edge of the basin
     # if the point is a 1 in the binary map, then we've already marked this point
